@@ -15,7 +15,7 @@ import {
 } from '@expo-google-fonts/poppins'
 
 import theme from './src/global/styles/theme';
-import { Signin } from './src/screens/Signin';
+import { Routes } from './src/routes';
 
 export default function App() {
   const [fontsLoad] = useFonts({
@@ -32,7 +32,7 @@ export default function App() {
   return (
     <ThemeProvider theme={theme}>
       <StatusBar style="light"/>
-      <Signin/>
+      <Routes/>
     </ThemeProvider>
   )
 }
