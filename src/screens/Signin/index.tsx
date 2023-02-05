@@ -7,6 +7,7 @@ import { useForm } from 'react-hook-form'
 import { InputForm } from '../../components/Form/InputForm'
 
 import Logo from '../../assets/pigz-logotipo-branco.svg'
+import GoogleSvg from '../../assets/google-icon.svg'
 
 import {
   Container,
@@ -20,8 +21,11 @@ import {
   TextAccount,
   TextCreateAccount,
   TextForgotPassword,
+  TextTitleGoogle,
 } from './styles'
 import { Button } from '../../components/Button'
+import { DivLine } from '../../components/DivLine'
+import { ButtonGoogle } from '../../components/ButtonGoogle'
 
 const schema = Yup.object().shape({
   email: Yup.string().required('Email é obrigatório!'),
@@ -79,6 +83,16 @@ export function Signin() {
           <TextAccount>Não tem uma Conta?</TextAccount>
           <TextCreateAccount> Criar agora!</TextCreateAccount>
         </AccountView>
+
+        <AccountView style={{marginBottom: 24}}>
+          <TextTitleGoogle>Entrar com</TextTitleGoogle>
+          <DivLine />
+        </AccountView>
+        <ButtonGoogle 
+          title="Continuar com o Google"
+          svg={GoogleSvg}
+          onPress={() => console.log('Login com Google')}
+          />
     </Container>
   )
 }

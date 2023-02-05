@@ -11,7 +11,7 @@ export const Container = styled(LinearGradient)`
   height: ${RFValue(48)}px;
 
   padding: 18px;
-  border-radius: ${RFValue(18)}px;
+  border-radius: ${RFValue(16)}px;
   align-items: center;
 `;
 

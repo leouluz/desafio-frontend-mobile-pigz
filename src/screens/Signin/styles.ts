@@ -54,6 +54,12 @@ export const TextAccount = styled.Text`
   color: ${({theme}) => theme.colors.text_dark};
 `;
 
+export const TextTitleGoogle = styled.Text`
+  font-family: ${({theme}) => theme.fonts.semiBold};
+  font-size: ${RFValue(13)}px;
+  color: ${({theme}) => theme.colors.title_dark};
+`;
+
 export const TextCreateAccount = styled.Text`
   font-family: ${({theme}) => theme.fonts.regular};
   font-size: ${RFValue(13)}px;
@@ -64,4 +70,5 @@ export const RowViewStart = styled.View`
   width: 100%;
   align-items: flex-start;
 `;
+
 

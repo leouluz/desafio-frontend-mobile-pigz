@@ -9,6 +9,7 @@ export default{
       text: '#676767',
       text_dark: '#4B4B4B',
       attention: '#E8453E',
+      border: '#9F9F9F'
   
     },
   

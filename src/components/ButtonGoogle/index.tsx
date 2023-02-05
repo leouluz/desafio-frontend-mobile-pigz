@@ -1,0 +1,36 @@
+import { RectButtonProps } from 'react-native-gesture-handler'
+import { SvgProps } from 'react-native-svg';
+import React from 'react'
+
+import {
+  Button,
+  ImageContainer,
+  Text,
+} from './styles'
+
+interface Props extends RectButtonProps {
+  title: string;
+  svg: React.FC<SvgProps>;
+}
+
+export function ButtonGoogle({
+  title,
+  svg: Svg,
+  ...rest
+}: Props) {
+  return (
+    <Button
+      {...rest}  
+    >
+      <ImageContainer>
+        <Svg 
+            width={20}
+            height={20}
+        />
+      </ImageContainer>
+      <Text>
+        {title}
+      </Text>
+    </Button>
+  )
+}
