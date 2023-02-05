@@ -1,7 +1,7 @@
 export default{
     colors:{
-      primary: '##FA641E',
-      primary_light: '##FF881F',
+      primary: '#FA641E',
+      primary_light: '#FF881F',
   
       shape: '#FFFFFF',
       title: '#222222',

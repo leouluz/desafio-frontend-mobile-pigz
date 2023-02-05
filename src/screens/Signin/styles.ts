@@ -32,27 +32,36 @@ export const LoginView = styled.View`
 
 export const TitleInput = styled.Text`
   font-family: ${({theme}) => theme.fonts.regular};
-  color: ${({theme}) => theme.colors.text};
+  color: ${({theme}) => theme.colors.text_dark};
   font-size: ${RFValue(13)}px;
   margin-bottom: ${RFValue(6)}px;
 `;
 
 export const TextForgotPassword = styled.Text`
+  font-family: ${({theme}) => theme.fonts.regular};
+  color: ${({theme}) => theme.colors.text};
+  text-decoration: underline;
 `;
 
 export const AccountView = styled.View`
+  flex-direction: row;
+  margin-top: ${RFValue(36)}px;
 `;
 
 export const TextAccount = styled.Text`
+  font-family: ${({theme}) => theme.fonts.regular};
+  font-size: ${RFValue(13)}px;
+  color: ${({theme}) => theme.colors.text_dark};
 `;
 
 export const TextCreateAccount = styled.Text`
+  font-family: ${({theme}) => theme.fonts.regular};
+  font-size: ${RFValue(13)}px;
+  color: ${({theme}) => theme.colors.primary};
 `;
-export const InputEmailView = styled.View`
+
+export const RowViewStart = styled.View`
   width: 100%;
   align-items: flex-start;
 `;
-export const InputPasswordlView = styled.View`
-  width: 100%;
-  align-items: flex-start;
-`;
+

@@ -13,8 +13,7 @@ import {
   LoginView,
   HeaderView,
   AccountView,
-  InputEmailView,
-  InputPasswordlView,
+  RowViewStart,
   TitleText,
   TitleInput,
   TitleTextLogin,
@@ -22,6 +21,7 @@ import {
   TextCreateAccount,
   TextForgotPassword,
 } from './styles'
+import { Button } from '../../components/Button'
 
 const schema = Yup.object().shape({
   email: Yup.string().required('Email é obrigatório!'),
@@ -50,7 +50,7 @@ export function Signin() {
         <TitleTextLogin>Login</TitleTextLogin>
       </LoginView>
 
-      <InputEmailView>
+      <RowViewStart>
         <TitleInput>Email ou Telefone</TitleInput>
         <InputForm 
           name="email"
@@ -59,8 +59,8 @@ export function Signin() {
           autoCorrect={false}
           error={errors.email && errors.email.message}
           />
-      </InputEmailView>
-      <InputPasswordlView>
+      </RowViewStart>
+      <RowViewStart style={{marginBottom: 24}}>
         <TitleInput>Senha</TitleInput>
         <InputForm 
           name="senha"
@@ -70,13 +70,15 @@ export function Signin() {
           secureTextEntry
           error={errors.password && errors.password.message}
           />
-      </InputPasswordlView>
+      </RowViewStart>
+      <RowViewStart style={{marginBottom: 24}}>
         <TextForgotPassword>Esqueci minha senha</TextForgotPassword>
+      </RowViewStart>
+          <Button title="Entrar" onPress={()=>console.log('entrou')}/>
         <AccountView>
           <TextAccount>Não tem uma Conta?</TextAccount>
           <TextCreateAccount> Criar agora!</TextCreateAccount>
         </AccountView>
-
     </Container>
   )
 }
