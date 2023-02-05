@@ -26,19 +26,28 @@ import {
 import { Button } from '../../components/Button'
 import { DivLine } from '../../components/DivLine'
 import { ButtonGoogle } from '../../components/ButtonGoogle'
+import { useNavigation } from '@react-navigation/native';
 
 const schema = Yup.object().shape({
   email: Yup.string().required('Email é obrigatório!'),
-  password: Yup.string().required('password é obrigatório!'),
+  password: Yup.string().required('Password é obrigatório!'),
 });
 
 export function Signin() {
+
+  const navigation = useNavigation<any>();
+  
   const {
     control,
+    handleSubmit,
     formState: { errors }
   } = useForm({
     resolver: yupResolver(schema)
   });
+
+  function handleLogin(){
+    navigation.navigate("DashBoard");
+  }
 
   return (
     <Container>
@@ -67,7 +76,7 @@ export function Signin() {
       <RowViewStart style={{marginBottom: 24}}>
         <TitleInput>Senha</TitleInput>
         <InputForm 
-          name="senha"
+          name="password"
           control={control}
           placeholder="*********"
           autoCorrect={false}
@@ -78,7 +87,10 @@ export function Signin() {
       <RowViewStart style={{marginBottom: 24}}>
         <TextForgotPassword>Esqueci minha senha</TextForgotPassword>
       </RowViewStart>
-          <Button title="Entrar" onPress={()=>console.log('entrou')}/>
+          <Button 
+            title="Entrar" 
+            onPress={handleSubmit(handleLogin)}
+          />
         <AccountView>
           <TextAccount>Não tem uma Conta?</TextAccount>
           <TextCreateAccount> Criar agora!</TextCreateAccount>

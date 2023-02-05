@@ -10,13 +10,17 @@ export const Container = styled(LinearGradient)`
   width: 100%;
   height: ${RFValue(48)}px;
 
-  padding: 18px;
   border-radius: ${RFValue(16)}px;
   align-items: center;
 `;
 
 export const Content = styled(RectButton)`
+  width: 100%;
+  height: ${RFValue(48)}px;
 
+  padding: 18px;
+  border-radius: ${RFValue(16)}px;
+  align-items: center;
 `;
 export const Title = styled.Text`
   font-family: ${({ theme }) => theme.fonts.medium};
