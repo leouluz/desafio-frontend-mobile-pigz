@@ -103,7 +103,7 @@ export function Signin() {
         <ButtonGoogle 
           title="Continuar com o Google"
           svg={GoogleSvg}
-          onPress={() => console.log('Login com Google')}
+          onPress={handleLogin}
           />
     </Container>
   )
