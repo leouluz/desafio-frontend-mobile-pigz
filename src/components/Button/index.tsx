@@ -15,7 +15,12 @@ export function Button({
   ...rest
 } : Props){
   return(
-    <Container colors={[theme.colors.primary, theme.colors.primary_light]} >
+    <Container 
+      start={{ x: 0.4, y: 1 }} 
+      end={{ x: 0.8, y: 1 }} 
+      locations={[0.1, 0.9]} 
+      colors={[theme.colors.primary_light, theme.colors.primary]}
+    >
       <Content onPress={onPress} {...rest}>
         <Title>
           {title}
