@@ -6,4 +6,5 @@ export const Container = styled.View`
   align-items: center;
   justify-content: flex-start;
   margin-top: ${RFValue(20)}px;
+  background-color: #fff;
 `;

@@ -18,5 +18,7 @@ export default{
       medium: 'Poppins_500Medium',
       semiBold: 'Poppins_600SemiBold',
       bold: 'Poppins_700Bold',
+
+      roboto_bold: 'Roboto_700Bold',
     }
   }
