@@ -33,9 +33,9 @@ const schema = Yup.object().shape({
   password: Yup.string().required('Password é obrigatório!'),
 });
 
-export function Signin() {
+export function Signin({navigation}) {
 
-  const navigation = useNavigation<any>();
+  // const navigation = useNavigation<any>();
   
   const {
     control,
@@ -103,7 +103,7 @@ export function Signin() {
         <ButtonGoogle 
           title="Continuar com o Google"
           svg={GoogleSvg}
-          onPress={() => console.log('Login com Google')}
+          onPress={handleLogin}
           />
     </Container>
   )

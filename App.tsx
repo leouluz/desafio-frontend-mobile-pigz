@@ -14,6 +14,10 @@ import {
   Poppins_600SemiBold,
 } from '@expo-google-fonts/poppins'
 
+import {
+  Roboto_700Bold
+} from '@expo-google-fonts/roboto'
+
 import theme from './src/global/styles/theme';
 import { Routes } from './src/routes';
 
@@ -23,6 +27,7 @@ export default function App() {
     Poppins_500Medium,
     Poppins_600SemiBold,
     Poppins_700Bold,
+    Roboto_700Bold
   });
 
   if (!fontsLoad) {
@@ -31,7 +36,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <StatusBar style="light"/>
+      <StatusBar style="dark"/>
       <Routes/>
     </ThemeProvider>
   )

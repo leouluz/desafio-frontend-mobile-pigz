@@ -8,6 +8,7 @@ export default{
       title_dark: '#333333',
       text: '#676767',
       text_dark: '#4B4B4B',
+      text_description: '#707070',
       attention: '#E8453E',
       border: '#9F9F9F'
   
@@ -18,5 +19,7 @@ export default{
       medium: 'Poppins_500Medium',
       semiBold: 'Poppins_600SemiBold',
       bold: 'Poppins_700Bold',
+
+      roboto_bold: 'Roboto_700Bold',
     }
   }

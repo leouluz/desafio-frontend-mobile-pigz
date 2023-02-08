@@ -17,6 +17,8 @@ export const Container = styled(LinearGradient)`
 export const Content = styled(RectButton)`
   width: 100%;
   height: ${RFValue(48)}px;
+  flex-direction: row;
+  justify-content: center;
 
   padding: 18px;
   border-radius: ${RFValue(16)}px;
