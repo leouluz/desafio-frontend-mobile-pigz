@@ -25,7 +25,7 @@ export default function InfoCard() {
         <TitleCard>29/07</TitleCard>
       </DayView>
       <DayView>
-        <TextValue>{`${showValue ? 'R$ 150' : '-----'}`}</TextValue>
+        <TextValue>{`${showValue ? 'R$ 150' : '----'}`}</TextValue>
         <ButtonEye onPress={() => setShowValue(!showValue)} value={showValue} />
       </DayView>
     </Container>

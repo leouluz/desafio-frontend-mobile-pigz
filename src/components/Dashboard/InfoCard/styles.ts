@@ -1,14 +1,13 @@
 import { RFValue } from 'react-native-responsive-fontsize';
 import { LinearGradient } from 'expo-linear-gradient';
 import styled from 'styled-components/native'
-import { RectButton } from 'react-native-gesture-handler';
 import { TouchableOpacity } from 'react-native';
 
 export const Container = styled(LinearGradient)`
   width: 80%;
   height: ${RFValue(110)}px;
 
-  margin-top: ${RFValue(60)}px;
+  margin-top: ${RFValue(20)}px;
 
   border-radius: ${RFValue(16)}px;
   align-items: center;

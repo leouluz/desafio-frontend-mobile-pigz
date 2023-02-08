@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { 
   Container,
   TitleCard
@@ -6,9 +6,10 @@ import {
 
 interface Props {
     title: string;
+    children?: ReactNode;
 }
 
-export default function CardWhite({ title } : Props) {
+export default function CardWhite({ title, children } : Props) {
 
   return (
     <Container style={{
@@ -23,6 +24,7 @@ export default function CardWhite({ title } : Props) {
         elevation: 8,
     }}>
         <TitleCard>{title}</TitleCard>
+        {children}
     </Container>
   )
 }
