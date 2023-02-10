@@ -15,7 +15,9 @@ import {
 } from '@expo-google-fonts/poppins'
 
 import {
-  Roboto_700Bold
+  Roboto_400Regular,
+  Roboto_500Medium,
+  Roboto_700Bold,
 } from '@expo-google-fonts/roboto'
 
 import theme from './src/global/styles/theme';
@@ -27,6 +29,8 @@ export default function App() {
     Poppins_500Medium,
     Poppins_600SemiBold,
     Poppins_700Bold,
+    Roboto_400Regular,
+    Roboto_500Medium,
     Roboto_700Bold
   });
 
