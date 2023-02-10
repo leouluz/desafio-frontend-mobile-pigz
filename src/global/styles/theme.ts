@@ -10,7 +10,8 @@ export default{
       text_dark: '#4B4B4B',
       text_description: '#707070',
       attention: '#E8453E',
-      border: '#9F9F9F'
+      border: '#9F9F9F',
+      line: '#BABABA'
   
     },
   
@@ -20,6 +21,8 @@ export default{
       semiBold: 'Poppins_600SemiBold',
       bold: 'Poppins_700Bold',
 
+      roboto_regular: 'Roboto_400Regular',
+      roboto_medium: 'Roboto_500Medium',
       roboto_bold: 'Roboto_700Bold',
     }
   }

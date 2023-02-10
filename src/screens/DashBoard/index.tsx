@@ -38,7 +38,7 @@ export function Dashboard({navigation}) {
   ];
   return (
     <Container>
-        <Header navigation={navigation} />
+        <Header title="Visão geral" navigation={navigation} />
           <InfoCard />
           <CardWhite title="Resumos das Entregas">
             <FlatList
@@ -53,7 +53,7 @@ export function Dashboard({navigation}) {
             <ViewButtonInput>
               <Input style={{width: '75%'}} />
               <ViewButton >
-                <Button title="Ok" onPress={() => console.log('ok')} />
+                <Button title="Ok" onPress={() => navigation.navigate('NewDelivery')} />
               </ViewButton>
             </ViewButtonInput>
             <ViewButtonScan>

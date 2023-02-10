@@ -8,9 +8,14 @@ import {
 import ArrowBack from '../../../assets/arrow_back.svg'
 import { View } from 'react-native'
 import { TouchableOpacity } from 'react-native-gesture-handler'
+import { NavigationProp } from '@react-navigation/native'
 
-export function Header({ navigation }) {
-  
+interface Props {
+  title: String;
+  navigation: any;
+}
+
+export function Header({ navigation, title } : Props) {
 
   return (
     <Container>
@@ -20,7 +25,7 @@ export function Header({ navigation }) {
             height={24}
         />
       </TouchableOpacity>
-        <TextTitle>Visão geral</TextTitle>
+        <TextTitle>{title}</TextTitle>
         <View></View>
     </Container>
   )

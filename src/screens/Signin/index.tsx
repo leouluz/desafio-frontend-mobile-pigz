@@ -98,7 +98,7 @@ export function Signin({navigation}) {
 
         <AccountView style={{marginBottom: 24}}>
           <TextTitleGoogle>Entrar com</TextTitleGoogle>
-          <DivLine />
+          <DivLine/>
         </AccountView>
         <ButtonGoogle 
           title="Continuar com o Google"
