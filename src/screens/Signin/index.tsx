@@ -26,7 +26,6 @@ import {
 import { Button } from '../../components/Button'
 import { DivLine } from '../../components/DivLine'
 import { ButtonGoogle } from '../../components/ButtonGoogle'
-import { useNavigation } from '@react-navigation/native';
 
 const schema = Yup.object().shape({
   email: Yup.string().required('Email é obrigatório!'),
@@ -34,8 +33,6 @@ const schema = Yup.object().shape({
 });
 
 export function Signin({navigation}) {
-
-  // const navigation = useNavigation<any>();
   
   const {
     control,

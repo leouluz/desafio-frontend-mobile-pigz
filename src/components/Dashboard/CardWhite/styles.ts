@@ -8,7 +8,6 @@ export const Container = styled.View`
 
   border-radius: ${RFValue(16)}px;
   align-items: flex-start;
-  justify-content: space-;
   padding: 16px;
   background-color: #fff;
 `;
