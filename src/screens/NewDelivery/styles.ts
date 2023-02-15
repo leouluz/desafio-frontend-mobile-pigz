@@ -33,7 +33,7 @@ export const OrangeBall = styled(LinearGradient)`
   width: 15px;
   margin-left: -23;
   margin-bottom: -20;
-  border-radius: 50%;
+  border-radius: 15px;
 `;
 
 export const SmallBall = styled.View`
@@ -47,7 +47,7 @@ export const SmallBall = styled.View`
   border-color: ${({theme})=> theme.colors.primary};
   background-color: ${({theme})=> theme.colors.shape};
   border-width: 1px;
-  border-radius: 50%;
+  border-radius: 9px;
 `;
 
 export const ViewStoryDelivery = styled.View`
