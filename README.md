@@ -28,6 +28,8 @@
 </div>
 <div id="image" style="margin-top:60px;">
   <h1 align="center">✨ Telas desenvolvidas</h1>
+  <h2 align="center">Para executar o progeto use o seguinte comando</h2>
+  <p>npx expo start</p>
   <div style="display:flex; flex-direction: row; justify-content: center;">
     <img src="Apresentacao/login.png" width="250"/>
     <img src="Apresentacao/dashboard.png" width="250"/>
